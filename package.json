@@ -1,0 +1,21 @@
+{
+  "name": "jquery-vanish",
+  "version": "1.0.0",
+  "main": "jquery.vanish.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vanish",
+    "jquery",
+    "plugin"
+  ],
+  "homepage": "http://github.com/matheusazzi/jquery-vanish",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs2-launcher": "^0.1.6"
+  }
+}
