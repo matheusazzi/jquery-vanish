@@ -28,10 +28,7 @@ $('h1').vanish();
 
 $('p').vanish({
   duration: 2500,
-  animation: 200,
-  onAllVanished: function() {
-    alert('Vanish ends');
-  }
+  animation: 200
 });
 ```
 
@@ -42,7 +39,23 @@ $('p').vanish({
 | duration      | Number   | 3000           | The duration in milliseconds to vanish all string |
 | animation     | Number   | 300            | The time of an item vanish animation |
 | className     | String   | 'is-vanishing' | A class to add when the character starts to vanish |
-| onAllVanished | Function | null           | Optional callback to call when all itens vanished |
+
+### Events
+
+The element should trigger a `vanished` event. You'll use like:
+
+```html
+<p>Other Foo Bar</p>
+```
+
+```javascript
+$('p').vanish({
+  duration: 2500,
+  animation: 200,
+}).on('vanished', function() {
+  alert('Vanish ends');
+})
+```
 
 ## License
 
