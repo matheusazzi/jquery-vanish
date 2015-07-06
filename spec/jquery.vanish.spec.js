@@ -15,8 +15,8 @@ describe('Jquery Vanish', function() {
       subject.vanish({
         duration: 100,
         animation: 0,
-        onAllVanished: foo.fn
       });
+      subject.on('vanished', foo.fn)
 
       jasmine.clock().tick(99);
       expect(foo.fn).not.toHaveBeenCalled();
