@@ -11,18 +11,13 @@
  *    default to 300ms
  *  {String} className, a class to add when the
  *    character starts to vanish, default to 'is-vanishing'
- *  {Function} onAllVanished, optional callback
- *    to call when all itens vanished
  *
  * @example
  *  <h1 class="foo">Hello Foo Bar</h1>
  *
  *  $('.foo').vanish({
  *    duration: 2500,
- *    animation: 200,
- *    onAllVanished: function() {
- *      alert('Vanish ends');
- *    }
+ *    animation: 200
  *  });
  */
 
@@ -32,8 +27,7 @@
   var defaults = {
     duration: 3000,
     animation: 300,
-    className: 'is-vanishing',
-    onAllVanished: null
+    className: 'is-vanishing'
   };
 
   function Vanish(element, options) {
@@ -94,9 +88,7 @@
   Vanish.prototype.endVanishment = function(index) {
     clearInterval(this.settings.timer);
 
-    if (typeof this.settings.onAllVanished === 'function') {
-      this.settings.onAllVanished();
-    }
+    this.element.trigger('vanished');
   };
 
   Vanish.prototype.vanish = function() {
