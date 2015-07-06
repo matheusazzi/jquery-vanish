@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/matheusazzi/jquery-vanish.svg)](https://travis-ci.org/matheusazzi/jquery-vanish)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sint perspiciatis officiis non eius a labore atque dolores esse aperiam reiciendis, cumque nisi? Consectetur nam soluta architecto illum placeat dolorum!
+A jQuery plugin to easily create a vanish effect on a string.
 
 ## Demo
 
