@@ -8,6 +8,20 @@
       font-family: Helvetica, Arial, tahoma, sans-serif;
     }
 
+    .samples h1 {
+      font-weight: normal;
+    }
+
+    a {
+      font-size: 80%;
+      text-decoration: none;
+      color: #337ab7;
+    }
+
+    a:hover {
+      color: #2e6da4;
+    }
+
     small {
       width: 70px;
       display: inline-block;
@@ -30,12 +44,15 @@
   </style>
 </head>
 <body>
+  <h1>jQuery Vanish - <a href="http://github.com/matheusazzi/jquery-vanish">See on Github</a></h1>
 
-  <h1><small>3s - </small><span class="sample1">Hello Foo Bar</span></h1>
-  <h1><small>3s - </small><span class="sample2">Hey Hello Foo Bar from some Baz</span></h1>
-  <h1><small>5s - </small><span class="sample3">Hello Foo Bar</span></h1>
-  <h1><small>8s - </small><span class="sample4">Hello Foo Bar</span></h1>
-  <h1><small>10s - </small><span class="sample5">Hello Foo Bar</span></h1>
+  <div class="samples">
+    <h1><small>3s - </small><span class="sample1">Hello Foo Bar</span></h1>
+    <h1><small>3s - </small><span class="sample2">Hey Hello Foo Bar from some Baz</span></h1>
+    <h1><small>5s - </small><span class="sample3">Hello Foo Bar</span></h1>
+    <h1><small>8s - </small><span class="sample4">Hello Foo Bar</span></h1>
+    <h1><small>10s - </small><span class="sample5">Hello Foo Bar</span></h1>
+  </div>
 
   <button data-start>Start Vanishing</button>
 
