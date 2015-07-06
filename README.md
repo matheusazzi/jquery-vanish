@@ -25,11 +25,19 @@ bower install jquery-vanish
 
 ```javascript
 $('h1').vanish();
+```
 
+### Events
+
+The plugin will trigger a `vanished` event on element:
+
+```javascript
 $('p').vanish({
   duration: 2500,
-  animation: 200
-});
+  animation: 200,
+}).on('vanished', function() {
+  alert('Vanish ends');
+})
 ```
 
 ### Options
@@ -40,22 +48,26 @@ $('p').vanish({
 | animation     | Number   | 300            | The time of an item vanish animation |
 | className     | String   | 'is-vanishing' | A class to add when the character starts to vanish |
 
-### Events
+## Browser Support
+<table>
+  <tbody>
+    <tr>
+      <td><img src="http://ie.microsoft.com/testdrive/ieblog/2010/Sep/16_UserExperiencesEvolvingthebluee_23.png" height="40"></td>
+      <td><img src="http://img3.wikia.nocookie.net/__cb20120330024137/logopedia/images/d/d7/Google_Chrome_logo_2011.svg" height="40"></td>
+      <td><img src="http://media.idownloadblog.com/wp-content/uploads/2014/06/Safari-logo-OS-X-Yosemite.png" height="40"></td>
+      <td><img src="http://th09.deviantart.net/fs71/200H/f/2013/185/e/b/firefox_2013_vector_icon_by_thegoldenbox-d6bxsye.png" height="40"></td>
+      <td><img src="http://upload.wikimedia.org/wikipedia/commons/d/d4/Opera_browser_logo_2013.png" height="40"></td>
 
-The element should trigger a `vanished` event. You'll use like:
-
-```html
-<p>Other Foo Bar</p>
-```
-
-```javascript
-$('p').vanish({
-  duration: 2500,
-  animation: 200,
-}).on('vanished', function() {
-  alert('Vanish ends');
-})
-```
+    </tr>
+    <tr>
+      <td align="center">9+</td>
+      <td align="center">✓</td>
+      <td align="center">✓</td>
+      <td align="center">✓</td>
+      <td align="center">✓</td>
+    </tr>
+  </tbody>
+</table>
 
 ## License
 

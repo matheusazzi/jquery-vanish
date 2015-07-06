@@ -1,7 +1,7 @@
 {
   "name": "jquery-vanish",
   "description": "A jQuery plugin to easily create a vanish effect on a string",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "jquery.vanish.js",
   "homepage": "https://github.com/matheusazzi/jquery-vanish",
   "authors": [
