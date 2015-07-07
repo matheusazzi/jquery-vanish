@@ -1,6 +1,7 @@
 # jQuery Vanish
 
 [![Build Status](https://travis-ci.org/matheusazzi/jquery-vanish.svg)](https://travis-ci.org/matheusazzi/jquery-vanish)
+[![Code Climate](https://codeclimate.com/repos/559bcbc46956805f29001d02/badges/9e4dc9eea15a30549ba6/gpa.svg)](https://codeclimate.com/repos/559bcbc46956805f29001d02/feed)
 
 A jQuery plugin to easily create a vanish effect on a string.
 

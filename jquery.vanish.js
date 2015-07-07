@@ -82,7 +82,7 @@
   };
 
   Vanish.prototype.indexes = function() {
-    return Array(this.chars.length).join(0).split(0).map(Number.call, Number);
+    return new Array(this.chars.length).join(0).split(0).map(Number.call, Number);
   };
 
   Vanish.prototype.random = function() {
@@ -93,7 +93,7 @@
     this.randomizables.splice(this.randomizables.indexOf(index), 1);
   };
 
-  Vanish.prototype.endVanishment = function(index) {
+  Vanish.prototype.endVanishment = function() {
     clearInterval(this.settings.timer);
 
     this.element.trigger('vanished');
